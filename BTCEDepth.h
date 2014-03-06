@@ -10,6 +10,7 @@ typedef QVector<QVector<BigDecimal>> BidList;
 class BTCEDepth
 {
 public:
+    BTCEDepth();
     BTCEDepth(const QJsonValue& asks, const QJsonValue& bids);
     AskList getAsks() const;
     BidList getBids() const;

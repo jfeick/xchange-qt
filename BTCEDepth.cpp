@@ -3,6 +3,9 @@
 #include <QJsonObject>
 #include <QJsonArray>
 
+BTCEDepth::BTCEDepth()
+{}
+
 BTCEDepth::BTCEDepth(const QJsonValue &asks, const QJsonValue &bids)
 {
     // parse asks
@@ -43,7 +46,7 @@ BidList BTCEDepth::getBids() const
 String BTCEDepth::toString() const
 {
     String output = "BTCEDepth [asks=";
-    for(auto AskLine : asks_) {
+    for(const auto &AskLine : asks_) {
         output += "[";
         output += QString::number(AskLine[0]);
         output += ",";
@@ -51,7 +54,7 @@ String BTCEDepth::toString() const
         output += "],";
     }
     output += " bids=";
-    for(auto BidLine : bids_) {
+    for(const auto &BidLine : bids_) {
         output += "[";
         output += QString::number(BidLine[0]);
         output += ",";
