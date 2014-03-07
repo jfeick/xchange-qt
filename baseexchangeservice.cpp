@@ -8,7 +8,8 @@ BaseExchangeService::BaseExchangeService(ExchangeSpecification exchangeSpecifica
 
 void BaseExchangeService::verify(const CurrencyPair &currencyPair) const
 {
-    assert(getExchangeSymbols().contains(currencyPair));
+    CurrencyPairContainer currencies;
+    assert(currencies.contains(currencyPair));
     // TODO
     // implement this as runtime check? (exception?)
 }

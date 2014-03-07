@@ -96,6 +96,10 @@ const CurrencyPair CurrencyPair::WDC_BTC = CurrencyPair(Currencies::WDC, Currenc
 const CurrencyPair CurrencyPair::DVC_BTC = CurrencyPair(Currencies::DVC, Currencies::BTC);
 
 
+CurrencyPair::CurrencyPair()
+    : baseCurrency_(""), counterCurrency_("")
+{}
+
 CurrencyPair::CurrencyPair(String baseCurrency)
     : baseCurrency_(baseCurrency), counterCurrency_(Currencies::USD)
 {}

@@ -7,6 +7,7 @@
 class CurrencyPair
 {
 public:
+    CurrencyPair();
     CurrencyPair(String baseCurrency);
     CurrencyPair(String baseCurrency, String counterCurrency);
     String toString() const;

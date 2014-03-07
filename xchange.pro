@@ -42,7 +42,14 @@ SOURCES += main.cpp \
     cacheddatasession.cpp \
     BTCEAccountInfo.cpp \
     BTCEDepth.cpp \
-    BTCEDepthWrapper.cpp
+    BTCEDepthWrapper.cpp \
+    BTCEExchangeInfo.cpp \
+    BTCEPairInfo.cpp \
+    BTCETicker.cpp \
+    BTCETickerWrapper.cpp \
+    BTCETrade.cpp \
+    BTCETradesWrapper.cpp \
+    BTCEBaseService.cpp
 
 HEADERS += \
     currencies.h \
@@ -73,4 +80,11 @@ HEADERS += \
     BTCEAccountInfo.h \
     BTCEAccountInfoReturn.h \
     BTCEDepth.h \
-    BTCEDepthWrapper.h
+    BTCEDepthWrapper.h \
+    BTCEExchangeInfo.h \
+    BTCEPairInfo.h \
+    BTCETicker.h \
+    BTCETickerWrapper.h \
+    BTCETrade.h \
+    BTCETradesWrapper.h \
+    BTCEBaseService.h
