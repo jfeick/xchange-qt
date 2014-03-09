@@ -11,9 +11,6 @@ public:
     BTCEBaseService(const ExchangeSpecification &exchangeSpecification);
 
     CurrencyPairContainer getExchangeSymbols() const;
-
-public:
-    static const CurrencyPairContainer currencyPairs_;
 };
 
 #endif // BTCEBASESERVICE_H
