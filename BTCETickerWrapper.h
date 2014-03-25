@@ -11,6 +11,7 @@ typedef QMap<String, BTCETicker> TickerMap;
 class BTCETickerWrapper
 {
 public:
+    BTCETickerWrapper();
     BTCETickerWrapper(const TickerMap &tickerMap);
 
     TickerMap getTickerMap() const;

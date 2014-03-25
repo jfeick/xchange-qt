@@ -1,5 +1,10 @@
 #include "BTCETickerWrapper.h"
 
+BTCETickerWrapper::BTCETickerWrapper()
+{
+
+}
+
 BTCETickerWrapper::BTCETickerWrapper(const TickerMap &tickerMap)
     : tickerMap_(tickerMap)
 {

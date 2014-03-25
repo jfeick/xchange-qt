@@ -114,6 +114,16 @@ CurrencyPair::toString() const
     return (baseCurrency_ + "/" + counterCurrency_);
 }
 
+String CurrencyPair::getBaseCurrency() const
+{
+    return baseCurrency_;
+}
+
+String CurrencyPair::getCounterCurrency() const
+{
+    return counterCurrency_;
+}
+
 bool
 CurrencyPair::operator==(CurrencyPair const& other) const
 {
@@ -121,3 +131,8 @@ CurrencyPair::operator==(CurrencyPair const& other) const
            other.counterCurrency_  == counterCurrency_);
 }
 
+uint qHash(const CurrencyPair &pair)
+{
+    String hashStr = pair.baseCurrency_ + String("/") + pair.counterCurrency_;
+    return qHash(hashStr);
+}

@@ -11,9 +11,9 @@ class ExchangeSpecification
 {
 public:
     ExchangeSpecification(String exchangeClassName);
-    template <typename T> ExchangeSpecification(const T& exchangeClass) {
+    /*template <typename T> ExchangeSpecification(const T& exchangeClass) {
         exchangeClassName_ = typeid(exchangeClass).name();
-    }
+    }*/
 
     String getExchangeClassName() const;
     QVariant getParameter(String key) const;

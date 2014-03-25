@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core
+QT       += network
 
 QT       -= gui
 
@@ -49,7 +50,13 @@ SOURCES += main.cpp \
     BTCETickerWrapper.cpp \
     BTCETrade.cpp \
     BTCETradesWrapper.cpp \
-    BTCEBaseService.cpp
+    BTCEBaseService.cpp \
+    BTCE.cpp \
+    networkmanager.cpp \
+    BTCEMarketDataServiceRaw.cpp \
+    BTCEBasePollingService.cpp \
+    BTCEExchange.cpp \
+    BTCEMarketDataService.cpp
 
 HEADERS += \
     currencies.h \
@@ -87,4 +94,10 @@ HEADERS += \
     BTCETickerWrapper.h \
     BTCETrade.h \
     BTCETradesWrapper.h \
-    BTCEBaseService.h
+    BTCEBaseService.h \
+    BTCE.h \
+    networkmanager.h \
+    BTCEMarketDataServiceRaw.h \
+    BTCEBasePollingService.h \
+    BTCEExchange.h \
+    BTCEMarketDataService.h

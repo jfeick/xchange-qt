@@ -13,12 +13,12 @@ public:
     BaseExchange();
     virtual ~BaseExchange();
 
-    virtual void applySpecification(ExchangeSpecification *exchangeSpecification);
+    virtual void applySpecification(const ExchangeSpecification *exchangeSpecification);
     virtual ExchangeSpecification* getExchangeSpecification() const;
     virtual PollingMarketDataService* getPollingMarketDataService() const;
-    virtual PollingTradeService* getPollingTradeService() const;
-    virtual PollingAccountService* getPollingAccountService() const;
-    //virtual StreamingExchangeService* getStreamingExchangeService() const;
+    //virtual PollingTradeService* getPollingTradeService() const;
+    //virtual PollingAccountService* getPollingAccountService() const;
+    // //virtual StreamingExchangeService* getStreamingExchangeService() const;
 
 protected:
     ExchangeSpecification* exchangeSpecification_;

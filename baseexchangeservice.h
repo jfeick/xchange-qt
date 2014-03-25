@@ -5,8 +5,8 @@
 #include "exchangespecification.h"
 #include "currencypair.h"
 
-#include <QVector>
-typedef QVector<CurrencyPair> CurrencyPairContainer;
+#include <QSet>
+typedef QSet<CurrencyPair> CurrencyPairContainer;
 
 class BaseExchangeService
 {

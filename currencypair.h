@@ -4,7 +4,7 @@
 #include "types.h"
 #include "currencies.h"
 
-class CurrencyPair
+struct CurrencyPair
 {
 public:
     CurrencyPair();
@@ -13,6 +13,9 @@ public:
     String toString() const;
 
 public:
+    String getBaseCurrency() const;
+    String getCounterCurrency() const;
+
     String baseCurrency_;
     String counterCurrency_;
 
@@ -117,6 +120,6 @@ public:
 
 };
 
-
+uint qHash(const CurrencyPair &pair);
 
 #endif // CURRENCYPAIR_H

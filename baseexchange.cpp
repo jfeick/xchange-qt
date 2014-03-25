@@ -14,13 +14,13 @@ BaseExchange::~BaseExchange()
     delete pollingAccountService_;
 }
 
-void BaseExchange::applySpecification(ExchangeSpecification *exchangeSpecification)
+void BaseExchange::applySpecification(const ExchangeSpecification *exchangeSpecification)
 {
     if(exchangeSpecification == nullptr) {
-        exchangeSpecification_ = new ExchangeSpecification(getDefaultExchangeSpecification());
+        exchangeSpecification_ = new ExchangeSpecification(*getDefaultExchangeSpecification());
     }
     else {
-        exchangeSpecification_ = new ExchangeSpecification(exchangeSpecification);
+        exchangeSpecification_ = new ExchangeSpecification(*exchangeSpecification);
     }
 
 }
@@ -35,6 +35,7 @@ PollingMarketDataService *BaseExchange::getPollingMarketDataService() const
     return pollingMarketDataService_;
 }
 
+/*
 PollingTradeService *BaseExchange::getPollingTradeService() const
 {
     return pollingTradeService_;
@@ -44,4 +45,4 @@ PollingAccountService *BaseExchange::getPollingAccountService() const
 {
     return pollingAccountService_;
 }
-
+*/

@@ -2,7 +2,7 @@
 
 
 BTCEBaseService::BTCEBaseService(const ExchangeSpecification &exchangeSpecification)
-    : BTCEBaseService(exchangeSpecification)
+    : BaseExchangeService(exchangeSpecification)
 {
 
 }

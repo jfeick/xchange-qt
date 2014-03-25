@@ -1,4 +1,4 @@
-#ifndef BTCEACCOUNTINFO_H
+ #ifndef BTCEACCOUNTINFO_H
 #define BTCEACCOUNTINFO_H
 
 #include "types.h"
